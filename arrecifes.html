@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Arrecifes de Coral 🌊</title>
+
+  <style>
+    /* 💠 Fondo animado tipo mar */
+    body {
+      background: linear-gradient(to bottom, #0077b6, #90e0ef);
+      background-attachment: fixed;
+      overflow-x: hidden;
+      color: #023047;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 💫 Animación suave y estilo global */
+    section, div, h2, p {
+      transition: all 0.8s ease;
+    }
+    section:hover, div:hover {
+      transform: scale(1.02);
+    }
+    button:hover {
+      transform: scale(1.1);
+      background:#00b4d8 !important;
+    }
+
+    /* 🌊 Burbujas flotando */
+    .bubble {
+      position: fixed;
+      bottom: -100px;
+      width: 20px;
+      height: 20px;
+      background: rgba(255,255,255,0.5);
+      border-radius: 50%;
+      animation: bubbleRise 8s infinite ease-in;
+    }
+
+    @keyframes bubbleRise {
+      0% {transform: translateY(0) scale(1);}
+      100% {transform: translateY(-110vh) scale(1.2);}
+    }
+
+    /* 🧭 Menú superior */
+    nav {
+      background:#023e8a;
+      color:white;
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      padding:15px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+    nav a {
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    nav a:hover {
+      text-decoration:underline;
+    }
+
+    /* 🫧 Encabezado */
+    header {
+      text-align:center;
+      padding:60px 20px;
+      background: linear-gradient(to bottom, #023e8a, #0077b6);
+      color:white;
+      overflow:hidden;
+    }
+    header h1 { font-size:2.5em; margin:0; }
+    header p { font-size:1.2em; color:#caf0f8; }
+
+    /* 📱 Adaptable */
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8em; }
+      header p { font-size: 1em; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 🌊 MENÚ DE NAVEGACIÓN -->
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#juegos">Juegos</a>
+    <a href="#videos">Videos</a>
+    <a href="#compromiso">Compromiso</a>
+    <a href="#conclusion">Conclusión</a>
+  </nav>
+
+  <!-- 🪸 ENCABEZADO -->
+  <header id="inicio">
+    <h1>🌊 Los Arrecifes de Coral 🌊</h1>
+    <p>Ecosistemas marinos en peligro — Feria de la Ciencia 2025</p>
+  </header>
+
+  <script>
+  // 🫧 Generar burbujas animadas
+  for (let i = 0; i < 20; i++) {
+    const bubble = document.createElement("div");
+    bubble.classList.add("bubble");
+    bubble.style.left = Math.random() * 100 + "vw";
+    bubble.style.width = bubble.style.height = Math.random() * 15 + 10 + "px";
+    bubble.style.animationDuration = 6 + Math.random() * 4 + "s";
+    document.body.appendChild(bubble);
+  }
+  </script>
+
+  <main style="padding: 20px; background-color: #f0f9ff; color: #023047; border-radius: 30px 30px 0 0; margin-top: -30px;">
+    <section>
+      <h2 style="color:#0077b6;">¿Qué son los arrecifes de coral?</h2>
+      <p>Los arrecifes de coral son estructuras vivas formadas por pequeños organismos llamados pólipos. 
+      Son el hogar de miles de especies marinas, ayudan a proteger las costas de la erosión y aportan al equilibrio del planeta.</p>
+    </section>
+
+    <section>
+      <h2 style="color:#0077b6;">Problema ambiental</h2>
+      <p>La acción humana está provocando la destrucción de los arrecifes de coral debido a la contaminación, 
+      la sobrepesca y el cambio climático. Esto afecta gravemente la biodiversidad marina y a las comunidades que dependen de estos ecosistemas.</p>
+    </section>
+
+    <section>
+      <h2 style="color:#0077b6;">Justificación</h2>
+      <p>Este proyecto busca generar conciencia sobre la importancia de los arrecifes de coral y promover 
+      acciones concretas para su protección. En la mayoría de los programas ambientales no se habla mucho de los corales, 
+      por eso queremos destacar su valor ecológico y social.</p>
+    </section>
+
+    <section>
+      <h2 style="color:#0077b6;">Solución propuesta 🌱</h2>
+      <p>Nuestra solución consiste en crear una <strong>campaña de concientización ambiental</strong> 
+      en nuestra comunidad educativa para enseñar sobre la importancia de los arrecifes de coral y fomentar su cuidado.</p>
+      <ul>
+        <li>Charlas educativas sobre el impacto humano en los arrecifes.</li>
+        <li>Diseño de carteles y videos informativos.</li>
+        <li>Compromisos ecológicos reales, como reducir el uso de plásticos.</li>
+        <li>Ejemplos de restauración exitosa de corales en distintas partes del mundo.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- 🎮 JUEGOS -->
+  <section id="juegos" style="background-color:#0077b6; color:white; padding:40px 20px; text-align:center;">
+    <h2>🎮 Zona de juegos educativos</h2>
+    <p>Aprende sobre los arrecifes de coral mientras juegas y ayudas al planeta 🌎</p>
+  </section>
+
+  <!-- 🧽 JUEGO 1: LIMPIA EL OCÉANO -->
+  <div style="background:#0096c7; margin:20px auto; padding:20px; border-radius:15px; width:90%; max-width:600px;">
+    <h3>🧽 Limpia el océano</h3>
+    <p>Haz clic sobre la basura antes de que se hunda 🌊</p>
+    <button onclick="iniciarLimpieza()" 
+      style="padding:10px 15px; background:#023e8a; color:white; border:none; border-radius:10px;">Jugar</button>
+    <div id="juegoLimpieza" style="display:none; margin-top:20px; background:#caf0f8; border-radius:10px; overflow:hidden; position:relative; width:100%; height:300px;">
+      <p id="puntaje" style="position:absolute; top:5px; left:10px; font-weight:bold; color:#023047;">Puntaje: 0</p>
+    </div>
+  </div>
+
+  <script>
+  function iniciarLimpieza(){
+    const contenedor = document.getElementById("juegoLimpieza");
+    contenedor.style.display = "block";
+    contenedor.innerHTML = '<p id="puntaje" style="position:absolute; top:5px; left:10px; font-weight:bold; color:#023047;">Puntaje: 0</p>';
+    let puntaje = 0;
+
+    function crearBasura(){
+      const basura = document.createElement("div");
+      basura.style.position = "absolute";
+      basura.style.width = "40px";
+      basura.style.height = "40px";
+      basura.style.backgroundImage = "url('https://cdn-icons-png.flaticon.com/512/1047/1047711.png')";
+      basura.style.backgroundSize = "cover";
+      basura.style.left = Math.random() * (contenedor.offsetWidth - 40) + "px";
+      basura.style.top = "-50px";
+      contenedor.appendChild(basura);
+
+      let velocidad = 1 + Math.random() * 2;
+      function mover(){
+        basura.style.top = parseFloat(basura.style.top) + velocidad + "px";
+        if(parseFloat(basura.style.top) > contenedor.offsetHeight){
+          contenedor.removeChild(basura);
+        } else {
+          requestAnimationFrame(mover);
+        }
+      }
+      mover();
+
+      basura.addEventListener("click", () => {
+        if (contenedor.contains(basura)){
+          contenedor.removeChild(basura);
+          puntaje++;
+          document.getElementById("puntaje").innerText = "Puntaje: " + puntaje;
+        }
+      });
+    }
+
+    const intervalo = setInterval(crearBasura, 800);
+    setTimeout(() => {
+      clearInterval(intervalo);
+      alert("¡Tiempo terminado! 🌊 Tu puntaje final: " + puntaje);
+      contenedor.innerHTML = "";
+      contenedor.style.display = "none";
+    }, 30000);
+  }
+  </script>
+
+  <!-- 🐠 JUEGO 2: SALVA LOS CORALES -->
+  <div style="background:#0096c7; margin:20px auto; padding:20px; border-radius:15px; width:90%; max-width:600px;">
+    <h3>🐠 Salva los corales</h3>
+    <p>Toca los corales blancos para devolverles el color antes de que se acabe el tiempo.</p>
+    <button onclick="iniciarCorales()" 
+      style="padding:10px 15px; background:#023e8a; color:white; border:none; border-radius:10px;">Jugar</button>
+
+    <div id="juegoCorales" style="display:none; margin-top:20px; background:#caf0f8; border-radius:10px; overflow:hidden; position:relative; width:100%; height:300px;">
+      <p id="puntajeCoral" style="position:absolute; top:5px; left:10px; font-weight:bold; color:#023047;">Puntaje: 0</p>
+    </div>
+  </div>
+<script>
+function iniciarCorales(){
+  const contenedor = document.getElementById("juegoCorales");
+  contenedor.style.display = "block";
+  contenedor.innerHTML = '<p id="puntajeCoral" style="position:absolute; top:5px; left:10px; font-weight:bold; color:#023047;">Puntaje: 0</p>';
+  let puntaje = 0;
+
+  function crearCoral(){
+    const coral = document.createElement("div");
+    coral.textContent = "🌸";
+    coral.style.position = "absolute";
+    coral.style.fontSize = "2em";
+    coral.style.top = Math.random() * (contenedor.offsetHeight - 40) + "px";
+    coral.style.left = Math.random() * (contenedor.offsetWidth - 40) + "px";
+    coral.style.cursor = "pointer";
+    contenedor.appendChild(coral);
+
+    coral.addEventListener("click", () => {
+      coral.textContent = "🪸";
+      puntaje++;
+      document.getElementById("puntajeCoral").innerText = "Puntaje: " + puntaje;
+      setTimeout(() => coral.remove(), 500);
+    });
+
+    setTimeout(() => { if (contenedor.contains(coral)) coral.remove(); }, 3000);
+  }
+
+  const intervalo = setInterval(crearCoral, 800);
+  setTimeout(() => {
+    clearInterval(intervalo);
+    alert("¡Tiempo terminado! 🪸 Corales salvados: " + puntaje);
+    contenedor.innerHTML = "";
+    contenedor.style.display = "none";
+  }, 30000);
+}
+</script>
+
+<!-- 🐟 JUEGO 3: ATRAPA LOS PECES -->
+<div style="background:#0096c7; margin:20px auto; padding:20px; border-radius:15px; width:90%; max-width:600px;">
+  <h3>🐟 Atrapa los peces</h3>
+  <p>Haz clic en los peces antes de que se escapen.</p>
+  <button onclick="iniciarPeces()" 
+    style="padding:10px 15px; background:#023e8a; color:white; border:none; border-radius:10px;">Jugar</button>
+  <div id="juegoPeces" style="display:none; margin-top:20px; background:#caf0f8; border-radius:10px; overflow:hidden; position:relative; width:100%; height:300px;">
+    <p id="puntajePeces" style="position:absolute; top:5px; left:10px; font-weight:bold; color:#023047;">Puntaje: 0</p>
+  </div>
+</div>
+
+<script>
+function iniciarPeces(){
+  const contenedor = document.getElementById("juegoPeces");
+  contenedor.style.display = "block";
+  contenedor.innerHTML = '<p id="puntajePeces" style="position:absolute; top:5px; left:10px; font-weight:bold; color:#023047;">Puntaje: 0</p>';
+  let puntaje = 0;
+
+  function crearPez(){
+    const pez = document.createElement("div");
+    pez.textContent = "🐠";
+    pez.style.position = "absolute";
+    pez.style.fontSize = "2em";
+    pez.style.top = Math.random() * (contenedor.offsetHeight - 50) + "px";
+    pez.style.left = "-50px";
+    pez.style.cursor = "pointer";
+    contenedor.appendChild(pez);
+
+    let velocidad = 2 + Math.random() * 3;
+    function mover(){
+      pez.style.left = parseFloat(pez.style.left) + velocidad + "px";
+      if(parseFloat(pez.style.left) > contenedor.offsetWidth){
+        contenedor.removeChild(pez);
+      } else {
+        requestAnimationFrame(mover);
+      }
+    }
+    mover();
+
+    pez.addEventListener("click", () => {
+      if(contenedor.contains(pez)){
+        contenedor.removeChild(pez);
+        puntaje++;
+        document.getElementById("puntajePeces").innerText = "Puntaje: " + puntaje;
+      }
+    });
+  }
+
+  const intervalo = setInterval(crearPez, 800);
+  setTimeout(() => {
+    clearInterval(intervalo);
+    alert("¡Juego terminado! 🎣 Peces atrapados: " + puntaje);
+    contenedor.innerHTML = "";
+    contenedor.style.display = "none";
+  }, 30000);
+}
+</script>
+<!-- 🧩 JUEGO (FALTANTE) 1: MEMORIA MARINA (completo) -->
+<div style="background:#0096c7; margin:20px auto; padding:20px; border-radius:15px; width:90%; max-width:600px;">
+  <h3>🧩 Memoria marina</h3>
+  <p>Encuentra las parejas correctas de animales marinos antes de que se acabe el tiempo ⏳</p>
+  <button onclick="iniciarMemoria2()" 
+    style="padding:10px 15px; background:#023e8a; color:white; border:none; border-radius:10px;">Jugar</button>
+
+  <div id="juegoMemoria2" style="display:none; margin-top:20px; background:#caf0f8; border-radius:10px; padding:10px; overflow:hidden; width:100%; height:auto;">
+    <p id="puntajeMemoria2" style="font-weight:bold; color:#023047;">Pares encontrados: 0</p>
+    <div id="tableroMemoria2" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:10px;"></div>
+  </div>
+</div>
+
+<script>
+function iniciarMemoria2() {
+  const contenedor = document.getElementById("juegoMemoria2");
+  const tablero = document.getElementById("tableroMemoria2");
+  const marcador = document.getElementById("puntajeMemoria2");
+  contenedor.style.display = "block";
+  tablero.innerHTML = "";
+  marcador.textContent = "Pares encontrados: 0";
+
+  let imagenes = [
+    "🐠","🐢","🐙","🪸","🐬","🐚","🐡","🦀",
+    "🐠","🐢","🐙","🪸","🐬","🐚","🐡","🦀"
+  ];
+
+  imagenes.sort(() => Math.random() - 0.5);
+  let primera = null;
+  let segunda = null;
+  let pares = 0;
+  let bloqueadas = false;
+
+  imagenes.forEach(icono => {
+    const carta = document.createElement("div");
+    carta.textContent = "❓";
+    carta.style.fontSize = "2em";
+    carta.style.display = "flex";
+    carta.style.alignItems = "center";
+    carta.style.justifyContent = "center";
+    carta.style.height = "70px";
+    carta.style.background = "white";
+    carta.style.borderRadius = "10px";
+    carta.style.cursor = "pointer";
+    carta.style.userSelect = "none";
+
+    carta.addEventListener("click", () => {
+      if (bloqueadas || carta.textContent !== "❓") return;
+      carta.textContent = icono;
+
+      if (!primera) {
+        primera = carta;
+      } else {
+        segunda = carta;
+        bloqueadas = true;
+        setTimeout(() => {
+          if (primera.textContent === segunda.textContent) {
+            pares++;
+            marcador.textContent = "Pares encontrados: " + pares;
+            primera.style.background = "#90e0ef";
+            segunda.style.background = "#90e0ef";
+            // dejar las cartas descubiertas
+            primera.style.pointerEvents = "none";
+            segunda.style.pointerEvents = "none";
+            if (pares === 8) {
+              setTimeout(() => {
+                alert("¡Excelente! 🌊 Encontraste todos los pares.");
+                contenedor.style.display = "none";
+              }, 300);
+            }
+          } else {
+            primera.textContent = "❓";
+            segunda.textContent = "❓";
+          }
+          primera = null;
+          segunda = null;
+          bloqueadas = false;
+        }, 600);
+      }
+    });
+    tablero.appendChild(carta);
+  });
+
+  // Tiempo límite
+  const limite = setTimeout(() => {
+    if (pares < 8) {
+      alert("⏳ Tiempo terminado. Pares encontrados: " + pares);
+      contenedor.style.display = "none";
+    }
+  }, 40000);
+
+  // limpiar si el contenedor se oculta por terminar
+  contenedor.addEventListener("DOMNodeRemoved", () => clearTimeout(limite));
+}
+</script>
+
+<!-- 🚮 JUEGO (FALTANTE) 2: CLASIFICA Y CUIDA (completo) -->
+<div style="background:#0096c7; margin:20px auto; padding:20px; border-radius:15px; width:90%; max-width:600px;">
+  <h3>🚮 Clasifica y cuida</h3>
+  <p>Arrastra cada objeto a su lugar correcto: el pez al mar y la basura al bote ♻️</p>
+  <button onclick="iniciarClasificar2()" 
+    style="padding:10px 15px; background:#023e8a; color:white; border:none; border-radius:10px;">Jugar</button>
+
+  <div id="juegoClasificar2" style="display:none; margin-top:20px; background:#caf0f8; border-radius:10px; overflow:hidden; position:relative; width:100%; height:320px; text-align:center;">
+
+    <div id="objetos2" style="display:flex; justify-content:center; gap:10px; margin-top:20px;"></div>
+
+    <div style="display:flex; justify-content:space-around; align-items:center; margin-top:40px;">
+      <div id="mar2" style="width:40%; height:100px; background:#90e0ef; border-radius:10px; border:3px solid #0077b6;">
+        🌊 <br> <strong>Mar</strong>
+      </div>
+      <div id="bote2" style="width:40%; height:100px; background:#ffb703; border-radius:10px; border:3px solid #fb8500;">
+        🗑️ <br> <strong>Bote</strong>
+      </div>
+    </div>
+
+    <p id="puntajeClasificar2" style="margin-top:10px; font-weight:bold; color:#023047;">Puntaje: 0</p>
+  </div>
+</div>
+
+<script>
+function iniciarClasificar2(){
+  const areaJuego = document.getElementById("juegoClasificar2");
+  const objetosDiv = document.getElementById("objetos2");
+  const mar = document.getElementById("mar2");
+  const bote = document.getElementById("bote2");
+  const marcador = document.getElementById("puntajeClasificar2");
+  let puntaje = 0;
+  areaJuego.style.display = "block";
+  objetosDiv.innerHTML = "";
+
+  const objetos = [
+    {icono:"🐠", tipo:"mar"},
+    {icono:"🐢", tipo:"mar"},
+    {icono:"🦑", tipo:"mar"},
+    {icono:"🧃", tipo:"bote"},
+    {icono:"🪣", tipo:"bote"},
+    {icono:"🧴", tipo:"bote"}
+  ];
+
+  // mezclar objetos para que no salgan siempre igual
+  objetos.sort(() => Math.random() - 0.5);
+
+  // Crear elementos arrastrables
+  objetos.forEach((obj, i) => {
+    const el = document.createElement("div");
+    el.textContent = obj.icono;
+    el.draggable = true;
+    el.dataset.tipo = obj.tipo;
+    el.id = "obj-" + i;
+    el.style.fontSize = "2em";
+    el.style.cursor = "grab";
+    el.style.background = "white";
+    el.style.borderRadius = "10px";
+    el.style.padding = "10px";
+    objetosDiv.appendChild(el);
+
+    el.addEventListener("dragstart", e => {
+      e.dataTransfer.setData("tipo", e.target.dataset.tipo);
+      e.dataTransfer.setData("elementoId", e.target.id);
+    });
+  });
+
+  // Permitir soltar
+  [mar, bote].forEach(zona => {
+    zona.addEventListener("dragover", e => e.preventDefault());
+    zona.addEventListener("drop", e => {
+      e.preventDefault();
+      const tipo = e.dataTransfer.getData("tipo");
+      const elId = e.dataTransfer.getData("elementoId");
+      const elemento = document.getElementById(elId);
+      if (!elemento) return;
+
+      if (
+        (zona.id === "mar2" && tipo === "mar") ||
+        (zona.id === "bote2" && tipo === "bote")
+      ) {
+        puntaje++;
+        marcador.textContent = "Puntaje: " + puntaje;
+        // efecto visual: quitar elemento
+        elemento.style.opacity = "0";
+        elemento.style.transform = "scale(0.6)";
+        elemento.style.pointerEvents = "none";
+        setTimeout(() => elemento.remove(), 400);
+        if (puntaje === objetos.length) {
+          setTimeout(() => alert("¡Excelente! 🌊 Clasificaste todos los objetos correctamente."), 300);
+          setTimeout(() => areaJuego.style.display = "none", 800);
+        }
+      } else {
+        // penaliza ligeramente moviendo la carta
+        elemento.style.transition = "transform 0.2s";
+        elemento.style.transform = "translateY(-8px)";
+        setTimeout(()=> elementReset(elemento), 200);
+        alert("⚠️ Ese objeto no pertenece aquí.");
+      }
+    });
+  });
+
+  function elementReset(el){
+    if(!el) return;
+    el.style.transform = "translateY(0)";
+  }
+
+  // Fin del juego (tiempo)
+  setTimeout(() => {
+    if (areaJuego.style.display === "block") {
+      alert("⏳ Tiempo terminado. Puntaje: " + puntaje);
+      areaJuego.style.display = "none";
+    }
+  }, 40000);
+}
+</script>
+
+<!-- 💚 CONTADOR ECOLÓGICO -->
+<section id="contador" style="background:#f0f9ff; padding:40px 20px; text-align:center;">
+  <h2 style="color:#0077b6;">💚 Nuestro impacto positivo</h2>
+  <p>Gracias a los esfuerzos de conservación, cada día más arrecifes se restauran.</p>
+  <div style="font-size:2em; font-weight:bold; color:#023047;">
+    🌊 <span id="contadorReef">0</span> arrecifes restaurados 💪
+  </div>
+</section>
+
+<script>
+let numero = 0;
+function contarReefs(){
+  if(numero < 120){
+    numero++;
+    document.getElementById("contadorReef").textContent = numero;
+    setTimeout(contarReefs, 50);
+  }
+}
+window.addEventListener("scroll", () => {
+  const seccion = document.getElementById("contador");
+  const pos = seccion.getBoundingClientRect().top;
+  if(pos < window.innerHeight - 100 && numero === 0){
+    contarReefs();
+  }
+});
+</script>
+
+<h2>🎥 Videos educativos</h2>
+ <iframe src="https://www.youtube.com/embed/jz89ypr6XDM" allowfullscreen></iframe> 
+<iframe src="https://www.youtube.com/embed/X24sCjtFffk" allowfullscreen></iframe> 
+<iframe src="https://www.youtube.com/embed/1_JMkSE0KiM" allowfullscreen></iframe> 
+</section>
+
+
+<!-- 💬 FRASES INSPIRADORAS -->
+<section style="background:#0096c7; color:white; padding:40px 20px; text-align:center;">
+  <h2>💭 Frases que inspiran</h2>
+  <p id="fraseInspiradora" style="font-size:1.2em; font-style:italic; max-width:600px; margin:auto;"></p>
+</section>
+
+<script>
+const frases = [
+  "Cuidar el mar es cuidar la vida. 🌍",
+  "Un pequeño cambio puede salvar un gran océano.",
+  "La naturaleza no necesita que la salven, necesita que la respeten.",
+  "Cada gota de agua cuenta. 💧",
+  "Los arrecifes son el corazón del océano. ❤️"
+];
+document.getElementById("fraseInspiradora").textContent = frases[Math.floor(Math.random() * frases.length)];
+</script>
+
+<!-- 🪸 CONCLUSIÓN -->
+<section id="conclusion" style="background:#0077b6; color:white; padding:40px 20px; text-align:center;">
+  <h2>🪸 Conclusión</h2>
+  <p style="max-width:700px; margin:auto; font-size:1.1em; line-height:1.5;">
+    Los arrecifes de coral son ecosistemas vitales para la vida marina y el equilibrio del planeta. 
+    Con este proyecto aprendimos que su destrucción afecta a todo el océano. 
+    Gracias a la investigación y los juegos de esta página, entendimos que la conciencia ambiental 
+    puede inspirar un cambio real. Si cada persona cuida el mar, podremos devolverle la vida que nos da. 💙🌍
+  </p>
+</section>
+
+<!-- 🎵 MÚSICA DE FONDO -->
+<audio autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2021/08/08/audio_73f21cb5b9.mp3?filename=waves-and-seagulls-6102.mp3" type="audio/mpeg">
+</audio>
+
+<footer id="compromiso" style="background:#023e8a; color:white; text-align:center; padding:20px;">
+  <p>🌿 Fundación Escolar “Guardianes del Mar” — Feria de la Ciencia 2025 🌊</p>
+</footer>
+
+</body>
+</html>
